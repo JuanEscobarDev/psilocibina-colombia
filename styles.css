@@ -672,6 +672,21 @@ button.retro-button {
   color: #ffffff;
 }
 
+@media (min-width: 561px) {
+  .protocol-matrix {
+    table-layout: fixed;
+  }
+
+  .protocol-matrix .matrix-col-variable {
+    width: 220px;
+  }
+
+  .protocol-matrix th:first-child,
+  .protocol-matrix td:first-child {
+    white-space: nowrap;
+  }
+}
+
 .feed-kicker {
   display: inline-flex;
   align-items: center;
