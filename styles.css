@@ -424,6 +424,14 @@ aside,
   text-transform: uppercase;
 }
 
+.hero-summary {
+  margin: 0;
+  max-width: 66ch;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
 .marquee-shell {
   overflow: hidden;
   margin: 0.8rem 0 1rem;
@@ -532,6 +540,14 @@ aside,
   margin-top: 1rem;
 }
 
+.cta-note {
+  margin: 1rem 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .portal-actions .retro-button {
   width: 100%;
   white-space: nowrap;
@@ -638,6 +654,37 @@ button.retro-button {
 
 .retro-table td strong {
   color: #ffffff;
+}
+
+.feed-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid rgba(37, 247, 205, 0.28);
+  background: rgba(0, 234, 255, 0.05);
+  color: var(--acid);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.feed-title {
+  display: block;
+  margin-top: 0.45rem;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.feed-summary {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 .side-stack {
@@ -867,12 +914,14 @@ textarea {
 
   fieldset {
     padding: 0.85rem;
+    border-width: 2px;
   }
 
   legend {
     max-width: 100%;
     font-size: 0.78rem;
     letter-spacing: 0.1em;
+    line-height: 1.35;
   }
 
   .portal-grid,
@@ -906,6 +955,11 @@ textarea {
     line-height: 1.6;
   }
 
+  .hero-summary {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
   .portal-actions {
     grid-template-columns: 1fr;
   }
@@ -934,6 +988,12 @@ textarea {
   .product-card p,
   .teaser-card p {
     font-size: 0.92rem;
+  }
+
+  .category-card,
+  .product-card,
+  .teaser-card {
+    padding: 0.95rem;
   }
 }
 
@@ -1032,7 +1092,7 @@ textarea {
   .post-intro,
   .entry-body,
   .small {
-    font-size: 0.98rem;
+    font-size: 1rem;
   }
 
   .lead,
@@ -1224,23 +1284,32 @@ textarea {
   }
 
   .signal-feed-table td:first-child {
-    display: none;
+    display: block;
   }
 
-  .signal-feed-table td:nth-child(2) {
-    color: var(--text);
-    font-size: 0.97rem;
-    line-height: 1.58;
+  .feed-kicker {
+    margin-bottom: 0.15rem;
+  }
+
+  .feed-title {
+    font-size: 1.02rem;
+    line-height: 1.45;
+  }
+
+  .feed-summary {
+    font-size: 0.94rem;
+    line-height: 1.6;
   }
 
   .signal-feed-table td:last-child {
-    margin-top: 0.4rem;
+    margin-top: 0.55rem;
   }
 
   .signal-feed-table td:last-child a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 40px;
     padding: 0.45rem 0.8rem;
     border: 1px solid var(--border);
