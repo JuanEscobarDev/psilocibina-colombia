@@ -1079,12 +1079,16 @@ textarea {
     display: block;
   }
 
-  .home-mobile-portales .portal-grid {
+  .mobile-signal-portales {
+    margin-top: 0.95rem;
+  }
+
+  .mobile-signal-portales .portal-grid {
     grid-template-columns: 1fr;
     gap: 0.7rem;
   }
 
-  .home-mobile-portales .category-card {
+  .mobile-signal-portales .category-card {
     padding: 0.8rem;
   }
 
@@ -1233,11 +1237,7 @@ textarea {
   }
 
   .signal-feed-table td:first-child {
-    color: var(--acid);
-    font-size: 0.74rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    display: none;
   }
 
   .signal-feed-table td:nth-child(2) {
@@ -1247,7 +1247,7 @@ textarea {
   }
 
   .signal-feed-table td:last-child {
-    margin-top: 0.15rem;
+    margin-top: 0.4rem;
   }
 
   .signal-feed-table td:last-child a {
