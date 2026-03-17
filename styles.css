@@ -1079,19 +1079,6 @@ textarea {
     display: block;
   }
 
-  .mobile-signal-portales {
-    margin-top: 0.95rem;
-  }
-
-  .mobile-signal-portales .portal-grid {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-  }
-
-  .mobile-signal-portales .category-card {
-    padding: 0.8rem;
-  }
-
   .home-mobile-audio .music-player-shell,
   .home-audio-block .music-player-shell {
     padding: 0.4rem;
